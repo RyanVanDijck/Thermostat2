@@ -17,6 +17,7 @@
     "eslint-plugin-promise": "^5.1.0",
     "jasmine": "^3.8.0",
     "jasmine-browser-runner": "^0.6.0",
+    "jquery": "^3.6.0",
     "serve": "^12.0.0"
   }
 }
