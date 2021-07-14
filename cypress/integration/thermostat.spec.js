@@ -4,7 +4,7 @@ describe('Thermostat home page', () => {
     // change the assertion to expect a message you want
     // see it fail, and then update your html file to make it pass.
 
-    cy.get("#welcome").should('contain', 'add your welcome message here')
+    cy.get("#welcome").should('contain', 'Thermostat')
   })
 
   it('when button clicked then temp increases by 1 ', () => {
