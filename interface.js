@@ -18,17 +18,17 @@ window.addEventListener('load', function() {
   button.addEventListener('click', function() {
     message.innerHTML = thermostat.up();
     usage.innerHTML = thermostat.getUsage();
-})
+})done
 
 down.addEventListener('click', function() {
   message.innerHTML = thermostat.down();
   usage.innerHTML = thermostat.getUsage();
-})
+})done
 
 change.addEventListener('click', function(){
   thermostat.changePowerSaving();
   power.innerHTML = thermostat.onPowerSaving();  
-})
+})done
 
 reset.addEventListener('click', () => {
   message.innerHTML = thermostat.reset(); 
@@ -53,6 +53,16 @@ $( document ).ready(function() {
     $( "#message" ).text(thermostat.up());
     $("#usage").text(thermostat.getUsage()); 
   })
+  $("#change").click((event) => {
+    thermostat.changePowerSaving();
+    $("#power").text(thermostat.onPowerSaving());
+    
+  })
+  $("#reset").click((event) => {
+    $("#message").text(thermostat.reset);
+    $("#usage").text(thermostat.getUsage());
+  })
+
 
   
 });
