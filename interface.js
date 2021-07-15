@@ -1,4 +1,4 @@
-const appid = 'df81213417c4bf9f021b8be24bd6bc1b';
+const appid = ""; 
 
 function getTemp(){
   return $.get(`http://api.openweathermap.org/data/2.5/weather?q=London&appid=${appid}`, (response) => {
